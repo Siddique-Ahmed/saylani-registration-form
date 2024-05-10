@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration || Form</title>
+  <link rel="stylesheet" href="./style.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+  <div id="header">
+<div class="img-box">
+  <img src="./img/saylani logo.png">
+</div>
+<div class="header-content">
+  <div class="icon-box">
+    <a href="https://www.facebook.com/saylani.smit" target="_blank"><img src="./img/facebook-preview.png" alt=""></a>
+    <a href="https://www.instagram.com/saylanimassittraining/" target="_blank"><img src="./img/instagram-icon.png" alt=""></a>
+    <a href="https://www.youtube.com/@SaylaniMassITTraining" target="_blank"><img src="./img/youtube-preview.png" alt=""></a>
+  </div>
+  <h2>Registration From - SMIT</h2>
+  <div class="portal">
+    <a href="https://student.saylaniwelfare.com/" target="_blank"><i class="ri-graduation-cap-fill"></i> Student Portal</a>
+  </div>
+</div>
+<div class="text">
+  <h5>Services - Education - Registration</h5>
+</div>
+  </div>
+  
+<!-- ############### Download Section #################### -->
+  <section id="download">
+    <div class="download-container">
+      <button class="btn1">Registration</button>
+      <button>Download Id Card</button>
+      <button>Results</button>
+    </div>
+  </section>
+
+  <!-- ################## details Section ##################### -->
+
+  <section id="details">
+    <div class="detail-container">
+      <div class="detail-box">
+        <span>Select city</span>
+        <select class="select" required>
+          <option value="" selected>Select City</option>
+          <option value="Karachi">Karachi</option>
+          <option value="Lahore">Lahore</option>
+          <option value="Faisalabad">Faisalabad</option>
+          <option value="Islamabad">Islamabad</option>
+        </select>
+      </div>
+      <div class="detail-box">
+        <span>Select course or event</span>
+        <select class="select" required>
+          <option value="" selected>Select course or event</option>
+          <option value="Karachi">Phyton</option>
+          <option value="Lahore">Graphic Desigining</option>
+          <option value="Faisalabad">Web And App Development</option>
+          <option value="Islamabad">Female Web And App Development</option>
+        </select>
+      </div>
+      <div class="detail-box">
+        <span>Select Campus</span>
+        <select class="select">
+          <option value="" selected>Select Campus</option>
+          <option value="Karachi">Aliabad</option>
+          <option value="Lahore">Bahadurabad</option>
+          <option value="Faisalabad">Gulshan</option>
+          <option value="Islamabad">Malir</option>
+        </select>
+      </div>
+      <div class="detail-box">
+        <span>Select Class Preference</span>
+        <select class="select">
+          <option value="" selected>Select Class Preference</option>
+          <option value="Karachi">Weekend Day (Monday to friday)</option>
+          <option value="Lahore">Weekend Day (Saturday to Sunday)</option>
+          <option value="Faisalabad">Both</option>
+        </select>
+      </div>
+      <div class="detail-box">
+        <span>Full name</span>
+        <input type="text" id="userName" placeholder="Full name" required>
+      </div>
+      <div class="detail-box">
+        <span>Father Name</span>
+        <input type="text" id="fatherName" placeholder="Father name" required>
+      </div>
+      <div class="detail-box">
+        <span>Email</span>
+        <input type="email" id="Email" placeholder="Email" required>
+      </div>
+      <div class="detail-box">
+        <span>Phone</span>
+        <input type="number" id="phone" placeholder="Phone" required>
+      </div>
+      <div class="detail-box">
+        <span>CNIC</span>
+        <input type="number" id="CNIC" placeholder="CNIC number" required>
+      </div>
+      <div class="detail-box">
+        <span>Father CNIC</span>
+        <input type="number" id="fatherCnic" placeholder="Father CNIC (Optional)">
+      </div>
+      <div class="detail-box">
+        <span>Date of birth</span>
+        <input type="date" id="date" required>
+      </div>
+      <div class="detail-box">
+        <span>Select Gender</span>
+        <select class="select" required>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="detail-box" id="width">
+        <span>Address</span>
+        <input type="text" id="address" placeholder="address" required>
+      </div>
+      <div class="detail-box" id="width">
+        <span>Last Qualification</span>
+        <select class="select" required>
+          <option :hover="background: #ccc" selected>Last Qualification</option>
+          <option :hover="background: #ccc" value="Karachi">Matric</option>
+          <option :hover="background: #ccc" value="Lahore">Intermediate</option>
+          <option :hover="background: #ccc" value="Faisalabad">Undergraduate</option>
+          <option :hover="background: #ccc" value="Islamabad">Graduate</option>
+          <option :hover="background: #ccc" value="Islamabad">Master</option>
+          <option :hover="background: #ccc" value="Islamabad">PhD</option>
+          <option :hover="background: #ccc" value="Islamabad">Other</option>
+        </select>
+      </div>
+      <div class="detail-box" id="width">
+        <span>Do you have a laptop ?</span>
+        <select class="select" required>
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- ################# Pic section ################# -->
+
+  <section id="pic">
+    <div class="imgBox">
+      <div class="getImg">
+        <div class="inputBox">
+          <h5>Picture</h5>
+      <input type="file" id="userPicture">
+        </div>
+        <ul class="list">
+          <li>With white or blue background</li>
+          <li>File size must be less than 1MB</li>
+          <li>File type: jpg, jpeg, png</li>
+          <li>Upload your recent passport size picture</li>
+          <li>Your Face should be clearly visible without any Glasses</li>
+        </ul>
+      </div>
+    </div>
+    <div class="textBox">
+      <ol class="list">
+        <li>I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my knowledge. Further, I will abide by all the established and future regulations and policies of SWIT</li>
+        <li>I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other activity, political or ethical, but learning during my stay in the program.</li>
+        <li>Defiance will render my admission canceled at any point in time.</li>
+        <li>Upon completion, of the course, I will complete the required project by SWIT</li>
+        <li>It's mandatory for female students to wear abaya/hijab in the class</li>
+      </ol>
+    </div>
+    <div class="btnbox">
+      <button id="SubmitBtn">Submit</button>
+    </div>
+  </section>
+
+  <!-- ########### for submit alart section ################## -->
+
+  <section id="submit-form">
+    <div class="submit-box">
+      <h1>Thanks for Registration</h1>
+      <button id="detailBtn">Veiw Detail</button>
+    </div>
+  </section>
+
+  <!-- ################## script file ################## -->
+  
+  <script src="./script.js"></script>
+
+</body>
+</html>

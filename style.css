@@ -1,0 +1,354 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 0 100px;
+  position: relative;
+}
+#header{
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255,0.9)), url(./img/hero\ section.avif);
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#header .img-box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+}
+#header .img-box img{
+  width: 270px;
+  object-fit: cover;
+}
+#header .header-content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+#header .header-content .icon-box{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .header-content .icon-box a{
+  text-decoration: none;
+  margin-right: 10px;
+}
+#header .header-content .icon-box a img{
+  width: 25px;
+}
+#header .header-content h2{
+  font-size: 25px;
+  width: 30%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.header-content .portal{
+  width: 30%;
+}
+.header-content .portal a{
+  border: 1px solid #0066b3;
+  padding: 7px 15px;
+  border-radius: 30px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #0066b3;
+}
+.header-content .portal a i{
+  margin-right: 7px;
+  font-size: 15px;
+}
+.text{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px 0;
+}
+.text h5{
+  font-size: 12px;
+  font-weight: 700;
+  color: #bbb;
+}
+
+/* ############## Download Section styling ################### */
+
+#download{
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.download-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.download-container button{
+  height: 100%;
+  border-bottom: none;
+  margin-right: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+}
+.download-container .btn1{
+  background-color: #fff;
+  color: #99ca3c;
+}
+
+/* ############# detail styling ##################### */
+
+#details{
+  width: 100%;
+}
+#details .detail-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+#details .detail-container .detail-box{
+  width: 45%;
+  min-height: 40px;
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.detail-container .detail-box span{
+  color: #0066b3;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.detail-container #width{
+  flex-basis: 100%;
+}
+.detail-box input,select{
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  border: 1px solid #99ca3c;
+  padding: 8px 12px;
+  color: #222;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 10px;
+  transition: 0.3s ease-in-out;
+}
+.detail-box select option{
+  width: 100%;
+  background: #ffffff;
+  color: #000000;
+  transition: 0.3s ease-in-out;
+}
+.detail-box input:hover{
+  border: 1px solid #0066b3;
+}
+.detail-box select:focus{
+  border: 1px solid #0066b3;
+}
+
+/* ###################### pic section styling ################# */
+
+#pic{
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+#pic .imgBox{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 40px;
+}
+.imgBox .getImg{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.imgBox .getImg .inputBox{
+  width: 190px;
+}
+.img-box .getImg .list{
+  flex-basis: 60%;
+}
+#pic .imgBox .getImg h5{
+  font-size: 12px;
+  color: #0066b3;
+  font-weight: 700;
+}
+#pic .imgBox .getImg input{
+  margin-top: 7px;
+}
+#pic .imgBox .list li{
+  list-style-type: none;
+  margin-bottom: 8px;
+  font-size: 11px;
+  color: #333;
+}
+
+#pic .textBox{
+  margin-top: 40px;
+}
+.textBox .list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.textBox .list li{
+  margin-bottom: 5px;
+  font-size: 13px;
+  line-height: 20px;
+}
+#pic .btnbox{
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pic .btnbox button{
+  width: 80%;
+  height: 100%;
+  background: #0066b3;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 20px;
+}
+#submit-form{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+.submit-box{
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px 12px rgb(0, 0, 0);
+}
+.submit-box h1{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg,#99ca3c,#0066b3);
+  -webkit-background-clip: text;
+  background-clip: text;
+      color: transparent;
+}
+.submit-box button{
+  width: 130px;
+  height: 30px;
+  background-color: #99ca3c;
+  color: #fff;
+  font-size: 17px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* ############# media query for 997px screeen ############### */
+
+@media (max-width: 997px){
+  
+  body{
+    padding: 0 50px;
+  }
+
+  #details .detail-container .detail-box{
+    width: 100%;
+  }
+}
+
+/* ################### media query for mobile ################## */
+
+@media (max-width: 600px){
+  #header .header-content{
+    flex-direction: column;
+  }
+  #header .header-content h2{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .header-content .portal{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #pic .inputBox{
+    margin-bottom: 15px;
+  }
+  #submit-form{
+    /* display: none; */
+  }
+  #submit-form .submit-box{
+    width: 340px;
+    height: 340px;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+/* ############# media query for small device ############## */
+
+@media (max-width: 385px){
+  body{
+    padding: 0;
+  }
+  #submit-form .submit-box{
+    width: 280px;
+    height: 280px;
+  }
+}
