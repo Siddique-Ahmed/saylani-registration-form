@@ -106,6 +106,7 @@ padding: 20px 0;
   border: none;
   border-radius: 3px;
   background-color: #f1f1f1;
+  font-size: 13px;
 }
 .download-container .btn1{
   background-color: #fff;
@@ -275,7 +276,7 @@ padding: 20px 0;
   background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8));
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   padding: 20px 0;
   position: absolute;
   top: 50%;
@@ -292,6 +293,7 @@ padding: 20px 0;
   align-items: center;
   border-radius: 10px;
   box-shadow: 3px 3px 12px rgb(0, 0, 0);
+  margin-bottom: 100px;
 }
 .submit-box h1{
   font-size: 30px;
@@ -315,7 +317,7 @@ padding: 20px 0;
 }
 
 
-/* ############# media query for 997px screeen ############### */
+/* ############# media query for 997px screen ############### */
 
 @media (max-width: 1014px){
   
@@ -331,6 +333,10 @@ padding: 20px 0;
 /* ################### media query for mobile ################## */
 
 @media (max-width: 600px){
+  body{
+    padding:0px 30px;
+  }
+
   #header .header-content{
     flex-direction: column;
   }
@@ -338,6 +344,9 @@ padding: 20px 0;
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 10px;
+  }
+  .download-container button{
+    font-size: 11px;
   }
   .header-content .portal{
     width: 50%;
@@ -365,8 +374,12 @@ padding: 20px 0;
   body{
     padding: 0;
   }
+  .download-container button{
+    padding: 10px 20x;
+    font-size: 10px;
+  }
   #submit-form .submit-box{
-    width: 280px;
-    height: 280px;
+    width: 90%;
+    height: 250px;
   }
 }
