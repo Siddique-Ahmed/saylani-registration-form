@@ -187,7 +187,7 @@ padding: 20px 0;
   flex-wrap: wrap;
   width: 100%;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   border-bottom: 1px solid #ccc;
   padding-bottom: 40px;
 }
@@ -196,7 +196,7 @@ padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 .imgBox .getImg .inputBox{
   width: 190px;
@@ -208,9 +208,27 @@ padding: 20px 0;
   font-size: 12px;
   color: #0066b3;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 #pic .imgBox .getImg input{
-  margin-top: 7px;
+  display: none;
+}
+#pic .imgBox .getImg .inputBox label{
+  font-size: 14px;
+  color: #000;
+  background: #fafafa;
+  width: 100px; 
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 0 10px;
+  border: 1px dashed #ccc;
+  transition: 0.2s ease-in-out;
+}
+#pic .imgBox .getImg .inputBox label:hover{
+  border: 1px dashed #0066b3;
 }
 #pic .imgBox .list li{
   list-style-type: none;
@@ -299,7 +317,7 @@ padding: 20px 0;
 
 /* ############# media query for 997px screeen ############### */
 
-@media (max-width: 997px){
+@media (max-width: 1014px){
   
   body{
     padding: 0 50px;
