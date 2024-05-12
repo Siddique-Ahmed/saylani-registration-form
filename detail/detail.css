@@ -1,0 +1,310 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 0 100px;
+  position: relative;
+}
+#detailHeader{
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255,0.9)), url(/img/hero\ section.avif);
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0066b3;
+}
+#detailHeader .img-box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+}
+#detailHeader .img-box img{
+  width: 270px;
+  object-fit: cover;
+}
+#detailHeader .header-content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+#detailHeader .header-content .icon-box{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#detailHeader .header-content .icon-box a{
+  text-decoration: none;
+  margin-right: 10px;
+}
+#detailHeader .header-content .icon-box a img{
+  width: 25px;
+}
+#detailHeader .header-content h2{
+  font-size: 25px;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 10px;
+}
+
+.header-content .portal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-content .portal a{
+  border: 1px solid #0066b3;
+  padding: 7px 15px;
+  border-radius: 30px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #0066b3;
+  display: inline-block;
+  text-align: center;
+}
+.header-content .portal a i{
+  margin-right: 7px;
+  font-size: 15px;
+}
+.text{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px 0;
+}
+.text h5{
+  font-size: 12px;
+  font-weight: 700;
+  color: #bbb;
+}
+
+/* ############## Download Section styling ################### */
+
+#download{
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.download-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.download-container button{
+  height: 100%;
+  border-bottom: none;
+  margin-right: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+  font-size: 13px;
+}
+.download-container .btn1{
+  background-color: #fff;
+  color: #99ca3c;
+}
+
+/* ############# card section styling ############### */
+
+#cards{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #222222ad;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.card-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.frontCard{
+  width: 45%;
+  height: 100%;
+  border-right: 2px dashed #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+.frontCard .imgBox{
+  width: 130px;
+  margin-bottom: 15px;
+}
+.frontCard .imgBox img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.frontCard .smit{
+  width: 210px;
+  height: 50px;
+  background-color: #eee;
+  position: relative;
+  padding: 5px 7px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.smit::before,
+.smit::after {
+    content: '';
+    position: absolute;
+    width: 20%;
+    border: 1px solid #0066b3;
+}
+.smit::before {
+  top: 0;
+  right: 0;
+}
+.smit::after {
+  bottom: 0;
+  left: 0;
+}
+.frontCard .smit h2{
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: #0066b3  ;
+}
+.frontCard .userImg{
+  height: 120px;
+  width: 120px;
+  border: 2px solid #99ca3c;
+  border-radius: 5px;
+  margin-bottom:25px;
+}
+.card-box .frontCard span{
+  margin-bottom: 15px;
+}
+
+.card-box .backCard{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.card-box .backCard .detail-container{
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.card-box .backCard .detail-container h5{
+  width: 30%;
+  margin-bottom: 5px; 
+}
+.card-box .backCard .detail-container span{
+  width: 60%;
+  margin-bottom: 5px;
+}
+.qrCode {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+.backCard p{
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-bottom: 80px;
+}
+.backCard .line{
+  width: 85%;
+  height: 3px;
+  background-color: #222;
+  margin-bottom: 10px;
+}
+
+/* ############## media query for 725 screen ############## */
+
+@media (max-width: 725px){
+  .card-box{
+    flex-direction: column;
+  }
+   .card-box .frontCard{
+    width: 100%;
+  }
+  .frontCard{
+    border-bottom: 2px dashed  #ccc;
+    border-right: none;
+  }
+  .card-box .backCard{
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+/* ################# media query for 605 screen ############## */
+
+@media (max-width: 605px){
+  body{
+    padding: 0 50px;
+  }
+
+  .header-content{
+    flex-direction: column;
+  }
+  .icon-box {
+    order: 2;
+  }
+  h2{
+    order: 1;
+  }
+  .header-content .portal{
+    order: 0;
+    width: 35%;
+  }
+  .header-content .portal a{
+    padding: 5px 8px;
+    font-size: 13 px;
+  }
+  .header-content .portal a i{
+    margin-right: 2px;
+  }
+}
+
+/* ############################# media query for small device ################ */
+
+@media (max-width: 445px) {
+  body{
+    padding: 0;
+  }
+  #detailHeader .img-box img{
+    width: 190px;
+  }
+  #detailHeader .header-content h2{
+    font-size: 20px;
+  }
+  .header-content .portal{
+    width: 50%;
+  }
+  .header-content h2{
+    font-size: 15px;
+  }
+}

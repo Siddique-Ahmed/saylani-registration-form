@@ -41,6 +41,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  order: 2;
 }
 #header .header-content .icon-box a{
   text-decoration: none;
@@ -54,10 +55,12 @@ body{
   width: 30%;
   text-align: center;
   line-height: 40px;
+  order: 1;
 }
 
 .header-content .portal{
   width: 30%;
+  order: 0;
 }
 .header-content .portal a{
   border: 1px solid #0066b3;
@@ -304,9 +307,8 @@ padding: 20px 0;
   background-clip: text;
       color: transparent;
 }
-.submit-box button{
-  width: 130px;
-  height: 30px;
+.submit-box a{
+  padding: 7px 17px;
   background-color: #99ca3c;
   color: #fff;
   font-size: 17px;
@@ -314,6 +316,9 @@ padding: 20px 0;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none
 }
 
 
