@@ -128,17 +128,16 @@ function GettingData() {
   let userRollNumber = localStorage.setItem("Roll No", generate);
 }
 
-
 function studentValidation() {
   let isValid = true;
   let fields = [city, course, campus, classOption, gender, qualification, laptop, userName, fatherName, Email, phone, CNIC, dob, address, userPic];
 
   fields.forEach(field => {
     if (field.value.trim() === "") {
-      field.style.border = "1px solid red"; // Khali field ko highlight karne ke liye
+      field.style.border = "1px solid red"; 
       isValid = false;
     } else {
-      field.style.border = "none"; // Agar field fill hai to border ko hata denge
+      field.style.border = "none"; 
     }
   });
 
