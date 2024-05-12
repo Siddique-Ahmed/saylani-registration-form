@@ -18,6 +18,7 @@ let address = document.querySelector("#address");
 let userPic = document.querySelector("#userPicture");
 let submitBtn = document.querySelector("#SubmitBtn");
 let submitForm = document.querySelector("#submit-form");
+let myForm = document.querySelector("#myForm")
 
 function getStudentData() {
   let cityValue = city.value;
@@ -57,10 +58,6 @@ function getStudentData() {
   }
 }
 
-function userDataValidation(){
-
-}
-
 function GettingData() {
   // Getting getStudentData funtion to save data in localStorage //
   let studentData = getStudentData();
@@ -84,9 +81,36 @@ function GettingData() {
   let getUSerPicValue = localStorage.setItem("userPicValue", studentData.userPicValue)
 }
 
+
+function formValidation() {
+ 
+let validCity =  city.value;
+let validCourse = course.value;
+let validCampus = campus.value;
+let validClassOption = classOption.value;
+let validGender = gender.value;
+let validQualification = qualification.value;
+let validLaptop = laptop.value;
+let validUserName = userName.value;
+let validFatherName = fatherName.value;
+let validEmail = Email.value;
+let validPhone = phone.value;
+let validCnic = CNIC.value;
+let validFatherCnic = fatherCnic.value;
+let validDob = dob.value;
+let validAddress = address.value;
+let validUserPic = userPic.value;
+
+if(validFatherName === ""){
+  fatherName.style.border = "1px solid red";
+}
+  
+}
+
 // ########### submit button ############# \\
 
 submitBtn.addEventListener("click", () => {
-  GettingData()
+  GettingData();
+  formValidation();
   submitForm.style.display = "flex";
 });
