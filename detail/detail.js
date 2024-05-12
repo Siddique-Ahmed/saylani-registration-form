@@ -35,9 +35,9 @@ console.log(gettingDataFromAnotherPage());
 function addInForm(){
 
   let studentData = gettingDataFromAnotherPage();
-  // let imgUrl = studentData.getImg;
+  let imgUrl = studentData.getImg;
 
-    // userImg.innerHTML = `<img src="${imgUrl}"></img>`
+    userImg.innerHTML = `<img src="${imgUrl}"></img>`
   userCourse.innerText = `${studentData.getCourse}`
   userName.innerText = `${studentData.getName}`
   username.innerText = `${studentData.getuserName}`
