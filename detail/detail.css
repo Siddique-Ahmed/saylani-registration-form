@@ -221,11 +221,15 @@ padding: 20px 0;
   width: 60%;
   margin-bottom: 5px;
 }
-.qrCode {
-  border: 2px solid rgba(0, 0, 0, 0.5);
+.qrCode { 
   width: 120px;
   height: 120px;
   margin-bottom: 20px;
+}
+.qrCode img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .backCard p{
   font-size: 16px;
